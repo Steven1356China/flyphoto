@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyPhoto - 我的相册</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>📸 FlyPhoto</h1>
+        <p>Steven 的简易图片仓库 | 由 GitHub Pages 驱动</p>
+    </header>
+
+    <main>
+        <!-- 相册列表会在这里动态生成 -->
+        <div class="albums-grid" id="albums-container">
+            <!-- 示例相册1 -->
+            <a href="album.html?album=holiday-2026" class="album-card">
+                <img src="albums/holiday-2026/cover.jpg" alt="假日 2026" class="album-cover">
+                <div class="album-info">
+                    <h3>假日 2026</h3>
+                    <p>记录美好旅行时光</p>
+                </div>
+            </a>
+            <!-- 示例相册2 -->
+            <a href="album.html?album=my-cat" class="album-card">
+                <img src="albums/my-cat/cover.jpg" alt="我的猫" class="album-cover">
+                <div class="album-info">
+                    <h3>我的猫</h3>
+                    <p>主子的日常</p>
+                </div>
+            </a>
+            <!-- 你可以复制上面的 <a>...</a> 块来添加更多相册 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Steven. 托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>。</p>
+        <p>更新照片：在 albums/ 添加文件夹并推送，然后手动修改 index.html 和 album.html。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
